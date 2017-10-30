@@ -6,25 +6,26 @@
 </head>
 <body>
 
-<h1>Zajęcia 10 października</h1>
+<h1>Zajęcia 17 października</h1>
 <h2>Om&oacute;wione zagadnienia</h2>
 <ul>
-<li>Przypomnienie pojęcia zmiennej.</li>
-<li>Typy danych: <em>int, long long int, float, double, char, bool.</em></li>
-<li>Niedokładność typ&oacute;w <em>float </em>i <em>double.</em></li>
-<li>Wypisywanie liczb zmiennoprzecinkowych z ustaloną precyzją (za pomocą <em>cout</em>) - funkcje <em>fixed </em>oraz <em>setprecision</em>.</li>
-<li>Powt&oacute;rzenie instrukcji warunkowej.</li>
+<li>Pojęcie pętli, pętla <em>for</em>.</li>
+<li>Klamry grupujące instrukcje, zasięg zmiennych.</li>
+<li>Operatory ++, +=, --, -=.</li>
+<li>Wczytywanie i wypisywanie z użyciem biblioteki <em>cstdio</em> - funkcje <em>printf </em>i <em>scanf</em>.</li>
 </ul>
 <h2>Materiały</h2>
 <ul>
-<li><a href="http://main.edu.pl/pl/user.phtml?op=lesson&amp;n=106&amp;page=cpp">http://main.edu.pl/pl/user.phtml?op=lesson&amp;n=105&amp;page=cpp</a></li>
-<li>Wczytywanie i wypisywanie liczby zmiennoprzecinkowej z ustaloną dokładnością<br />
+<li><a href="http://main.edu.pl/pl/user.phtml?op=lesson&amp;n=108&amp;page=cpp">http://main.edu.pl/pl/user.phtml?op=lesson&amp;n=108&amp;page=cpp</a></li>
+<li><a href="http://www.cplusplus.com/reference/cstdio/scanf/">http://www.cplusplus.com/reference/cstdio/scanf/</a></li>
+<li><a href="http://www.cplusplus.com/reference/cstdio/printf/">http://www.cplusplus.com/reference/cstdio/printf/</a></li>
+<li>Prosty kod<em>, </em>kt&oacute;ry wczytuje <em>n</em> liczb i wypisuje je natychmiast na wejście.<br />
 <pre>#include&lt;iostream&gt;
 using namespace std;
 int main(){
-    double x;
-    cin &gt;&gt; x;
-    cout &lt;&lt; fixed &lt;&lt; setprecision(6) &lt;&lt; x &lt;&lt; "\n";
+    int n;
+    cin &gt;&gt; n;
+    for(int i=0; i&lt;n; i++){<br />        int a;<br />        cin &gt;&gt; a;<br />        cout &lt;&lt; a &lt;&lt; "\n";<br />    }
     return 0;
 }</pre>
 </li>
